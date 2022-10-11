@@ -7,10 +7,10 @@
     <h1>Coding Form!</h1>
     <form action="" method="get">
       <div>
-        <label for="email">Email <br /></label>
-        <input type="text" name="email" id="email"/>
+        <label for="email">Email <br/>
+          <input type="text" name="email" id="email"/></label>
       </div>
-      <div>Why is coding cool? <br />
+      <div><label for="dropDown">is coding cool? <br/></label>
         <select name="dropDown" id="dropDown">
           <option value="">Select an option</option>
           <option value="interesting">Because it's interesting</option>
@@ -19,13 +19,17 @@
         </select>
       </div>
       <div>Favorite Language (choose one)<br/>
-        <input type="radio" name="language" id="html" value="html"/> HTML
-        <input type="radio" name="language" id="css" value="css"/> CSS
-        <input type="radio" name="language" id="java" value="java"/> JavaScript
+        <input type="radio" name="language" id="html" value="html"/>
+        <label for="html">HTML</label>
+        <input type="radio" name="language" id="css" value="css"/>
+        <label for="css">CSS</label>
+        <input type="radio" name="language" id="java" value="java"/>
+        <label for="java">JavaScript</label>
       </div>
       <div>
         Would you like to sign up for more information? <br/>
-        <input type="checkbox" name="sign" id="sign" value="sign"/> Sign me up!
+        <input type="checkbox" name="sign" id="sign" value="sign"/>
+        <label for="sign">Sign me up!</label>
       </div>
       <div>Comments <br/>
         <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
