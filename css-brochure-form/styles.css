@@ -5,6 +5,10 @@ h3 {
   letter-spacing: 2px;
 }
 
+::placeholder {
+  color: #b4b4b4;
+}
+
 form {
   width: 50%;
   margin: auto;
@@ -22,7 +26,7 @@ input {
   padding: 10px;
   margin-bottom: 12px;
   margin-top: 2px;
-  border: 1px solid lightgray;
+  border: 1px solid #b6b9b8;
   border-radius: 4px;
 }
 
@@ -30,9 +34,9 @@ select {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid lightgray;
+  border: 1px solid #babdbd;
   border-radius: 4px;
-  background-color: whitesmoke;
+  background-color: #f3f3f3;
   font-family: "Brandon Grotesque", sans-serif;
   margin-bottom: 10px;
 }
