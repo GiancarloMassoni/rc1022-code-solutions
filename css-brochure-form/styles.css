@@ -15,9 +15,12 @@ form {
   font-family: "Brandon Grotesque", sans-serif;
 }
 
+.labelform {
+  margin-left: 10px;
+}
+
 label {
   font-size: 12px;
-  margin-left: 10px;
   font-family: "Brandon Grotesque", sans-serif;
 }
 
