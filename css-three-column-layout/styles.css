@@ -10,10 +10,9 @@ body {
 
 .row {
   display: flex;
-  justify-content: center;
 }
 
-.column-full {
+.column-full.padding-top {
   padding-top: 30px;
 }
 
@@ -31,6 +30,9 @@ p {
 
 .column-one-third {
   flex-basis: calc(100% / 3);
+}
+
+.column-one-third.col-margin {
   margin: 30px;
 }
 
