@@ -3,6 +3,10 @@
   margin: auto;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .row {
   display: flex;
   justify-content: center;
