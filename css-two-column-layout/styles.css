@@ -8,7 +8,7 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 1000px;
   margin: auto;
 }
 
@@ -29,11 +29,6 @@ p {
   text-align: center;
 }
 
-.column-header p {
-  padding-left: 2000px;
-  padding-right: 200px;
-}
-
 h1 {
   letter-spacing: 8px;
   margin-top: 70px;
@@ -49,8 +44,8 @@ h1 {
 }
 
 .column-full p {
-  padding-left: 270px;
-  padding-right: 270px;
+  padding-left: 170px;
+  padding-right: 170px;
 }
 
 .center-align {
