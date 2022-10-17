@@ -1,0 +1,15 @@
+var fulName = 'Giancarlo Massoni';
+var isCool = true;
+var totalPets = 3;
+console.log('value of fulName: ', fulName);
+console.log('value of isCool: ', isCool);
+console.log('value of totalPets :', totalPets);
+console.log('typeof fulName:', typeof (fulName));
+console.log('typeof isCool', typeof (isCool));
+console.log('type of totalPets: ', typeof (totalPets));
+var unknown = null;
+console.log('Value of unknown:', unknown);
+console.log('typeof unknown:', typeof (unknown));
+var never;
+console.log('value of never:', never);
+console.log('typeof never:', typeof (never));
