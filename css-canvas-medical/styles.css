@@ -21,7 +21,7 @@ ul {
   display: flex;
 }
 
-.column-header {
+.header {
   padding-top: 30px;
 }
 
@@ -92,24 +92,11 @@ img {
   width: 1000px;
 }
 
-.column-two-thirds {
+.hero-text-positioning {
   position: absolute;
   top: 30px;
   left: 70px;
   width: 40%;
-}
-
-.column-two-thirds-product {
-  position: absolute;
-  top: 160px;
-  left: 70px;
-  width: 50%;
-}
-
-.column-two-thirds-product p {
-  color: white;
-  line-height: 25px;
-  font-family: Avenir, sans-serif;
 }
 
 .overlay {
@@ -180,7 +167,7 @@ img {
   justify-content: space-between;
 }
 
-.column-half-spacing {
+.spacing {
   padding: 30px 80px;
 }
 
@@ -208,13 +195,19 @@ img {
   background-color: #525351;
 }
 
-.column-two-thirds-footer {
+.column-two-thirds {
   flex-basis: calc(200% / 3);
+}
+
+.footer-padding {
   padding: 70px;
 }
 
 .column-one-third {
   flex-basis: calc(100% /3);
+}
+
+.one-third-padding {
   padding-top: 45px;
 }
 
