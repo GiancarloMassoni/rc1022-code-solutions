@@ -99,6 +99,19 @@ img {
   width: 40%;
 }
 
+.column-two-thirds-product {
+  position: absolute;
+  top: 160px;
+  left: 70px;
+  width: 50%;
+}
+
+.column-two-thirds-product p {
+  color: white;
+  line-height: 25px;
+  font-family: Avenir, sans-serif;
+}
+
 .overlay {
   background: linear-gradient(transparent, rgb(0 0 0 / 75%));
   position: absolute;
@@ -217,4 +230,12 @@ img {
 
 .column-half-spacing li {
   color: #525351;
+}
+
+.product-hero-image {
+  background-image: url("images/product/product-header.jpg");
+  background-size: cover;
+  height: 550px;
+  width: 1000px;
+  margin-top: 50px;
 }
