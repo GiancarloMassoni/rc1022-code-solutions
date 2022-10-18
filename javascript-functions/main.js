@@ -3,30 +3,40 @@ function convertsMinutesToSeconds(minutes) {
   return seconds;
 }
 
-console.log(convertsMinutesToSeconds(5));
+var convertsMinutesToSecondsResult = convertsMinutesToSeconds(5);
+
+console.log(convertsMinutesToSecondsResult);
 
 function greet(name) {
   var hey = 'Hey, ';
   return hey + name;
 }
 
-console.log(greet('Giancarlo'));
+var greetResult = greet('Giancarlo');
+
+console.log(greetResult);
 
 function getArea(width, height) {
   var area = width * height;
   return area;
 }
 
-console.log(getArea(17, 42));
+var getAreaResult = getArea(17, 42);
+
+console.log(getAreaResult);
 
 function getFirstName(person = { firstName: '', lastName: '' }) {
   return person.firstName;
 }
 
-console.log(getFirstName({ firstName: 'Giancarlo', lastName: 'Massoni' }));
+var getFirstNameResult = getFirstName({ firstName: 'Giancarlo', lastName: 'Massoni' });
+
+console.log(getFirstNameResult);
 
 function getLastElement(array) {
   return array[array.length - 1];
 }
 
-console.log(getLastElement(['propane', 'and', 'propane', 'accessories']));
+var getLastElementResult = getLastElement(['propane', 'and', 'propane', 'accessories']);
+
+console.log(getLastElementResult);
