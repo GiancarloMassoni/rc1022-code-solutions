@@ -38,5 +38,9 @@ img {
 
 .smaller-images {
   width: 30%;
-  padding-left: 80px;
+  padding-left: 100px;
+}
+
+.center {
+  justify-content: center;
 }
