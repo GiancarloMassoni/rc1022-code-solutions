@@ -1,0 +1,42 @@
+.container {
+  background-color: #f8f8fa;
+}
+
+body {
+  font-family: Barlow, sans-serif;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+h3,
+p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.padding {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.smaller-images {
+  width: 30%;
+  padding-left: 80px;
+}
