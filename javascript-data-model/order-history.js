@@ -2,40 +2,43 @@ var orderHistory = [
   {
     orderNumber: '114-3941689-8772232',
     totalNumOfProducts: 1,
-    itemInOrder: [0],
-    productName: 'JavaScript for impatient programmers',
+    itemInOrder: [{
+      productName: 'JavaScript for impatient programmers',
+      productType: 'Literature',
+      productPrice: 31.55,
+      author: true,
+      authorName: 'Rauschmayer, Dr. Axel'
+    }],
     dateOrderPlaced: 'August 4, 2020',
-    productType: 'Literature',
-    productPrice: 31.55,
     dateOrderDelivered: 'August 8, 2020',
-    author: true,
-    authorName: 'Rauschmayer, Dr. Axel',
     totalPrice: 34.00
   },
   {
     orderNumber: '113-9984268-1280257',
     totalNumOfProducts: 1,
-    itemInOrder: [0],
-    productName: 'The Timeless Way of Building',
+    itemInOrder: [{
+      productName: 'The Timeless Way of Building',
+      productType: 'Literature',
+      productPrice: 41.33,
+      author: true,
+      authorName: 'Alexander Christopher'
+    }],
     dateOrderPlaced: 'July 19, 2020',
-    productType: 'Literature',
-    productPrice: 41.33,
     dateOrderDelivered: 'July 20, 2020',
-    author: true,
-    authorName: 'Alexander Christopher',
     totalPrice: 44.53
   },
   {
     orderNumber: '114-2875557-9059409',
     totalNumOfProducts: 1,
-    itemInOrder: [0],
-    productName: 'Gamecube Controler Adapter. Super Smash bros Switch Gamecube adapter for WII U, PC. Support Turbo and Vibration Features. No Drive and No Lag-Gamecube Adapter',
+    itemInOrder: [{
+      productName: 'Gamecube Controler Adapter. Super Smash bros Switch Gamecube adapter for WII U, PC. Support Turbo and Vibration Features. No Drive and No Lag-Gamecube Adapter',
+      productType: 'Hardware',
+      productPrice: 15.98,
+      author: false,
+      authorName: null
+    }],
     dateOrderPlaced: 'July 4, 2020',
-    productType: 'Hardware',
-    productPrice: 15.98,
     dateOrderDelivered: 'July 7, 2020',
-    author: false,
-    authorName: null,
     totalPrice: 15.98
   },
   {
