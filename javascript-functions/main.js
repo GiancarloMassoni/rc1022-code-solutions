@@ -25,7 +25,7 @@ var getAreaResult = getArea(17, 42);
 
 console.log(getAreaResult);
 
-function getFirstName(person = { firstName: '', lastName: '' }) {
+function getFirstName(person = {}) {
   return person.firstName;
 }
 
