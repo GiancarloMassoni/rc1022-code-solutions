@@ -21,6 +21,7 @@ h2 {
 img {
   width: 100%;
   height: 80%;
+  object-fit: contain;
 }
 
 span {
@@ -38,5 +39,6 @@ mark {
 }
 
 .padding {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
