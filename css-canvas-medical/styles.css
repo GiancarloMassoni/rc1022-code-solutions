@@ -228,7 +228,21 @@ img {
 .product-hero-image {
   background-image: url("images/product/product-header.jpg");
   background-size: cover;
-  height: 550px;
-  width: 1000px;
-  margin-top: 50px;
+  height: 480px;
+  width: 900px;
+  margin-top: 20px;
+}
+
+.product-hero-text-positioning {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 52%;
+}
+
+.product-one-image {
+  background-image: url("images/product/product-image-1.png");
+  height: 620px;
+  width: 600px;
+  margin: 40px;
 }
