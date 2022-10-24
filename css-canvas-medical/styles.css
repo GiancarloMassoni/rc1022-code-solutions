@@ -246,3 +246,18 @@ img {
   width: 600px;
   margin: 40px;
 }
+
+.padding-top {
+  padding-top: 110px;
+}
+
+h3 {
+  font-family: Avenir, sans-serif;
+  font-size: 30px;
+  color: #184362;
+}
+
+.column-half.padding-top p {
+  color: #184362;
+  font-family: Avenir, sans-serif;
+}
