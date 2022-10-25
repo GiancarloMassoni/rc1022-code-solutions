@@ -13,8 +13,8 @@ var backgroundOff = $background.className = 'background background-off';
 var backgroundOn = $background.className = 'background background-on';
 
 function lightSwitch(event) {
-
-  if ($light.className === lightOn) {
+  var lightStatus = $light.className;
+  if (lightStatus === lightOn) {
     $light.className = lightOff;
     $background.className = backgroundOff;
   } else {
