@@ -6,21 +6,16 @@
 var $light = document.querySelector('.light');
 var $background = document.querySelector('.background');
 $light.addEventListener('click', lightSwitch);
-
-var lightOff = $light.className = 'light light-off';
-var lightOn = $light.className = 'light light-on';
-var backgroundOff = $background.className = 'background background-off';
-var backgroundOn = $background.className = 'background background-on';
 var isLightOn = true;
 function lightSwitch(event) {
 
   if (isLightOn) {
-    $light.className = lightOff;
-    $background.className = backgroundOff;
+    $light.className = 'light light-off';
+    $background.className = 'background background-off';
     isLightOn = false;
   } else {
-    $light.className = lightOn;
-    $background.className = backgroundOn;
+    $light.className = 'light light-on';
+    $background.className = 'background background-on';
     isLightOn = true;
   }
 }
