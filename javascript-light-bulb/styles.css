@@ -1,0 +1,31 @@
+div {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+.light-on {
+  background-color: #faea84;
+  box-shadow: 1px 5px 20px #faea84;
+}
+
+.light-off {
+  background-color: #252525;
+  box-shadow: 1px -20px 20px #0c0c0c;
+}
+
+.background-on {
+  background-color: white;
+}
+
+.background-off {
+  background-color: #111;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin: auto;
+}
