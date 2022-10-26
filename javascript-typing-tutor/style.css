@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+span {
+  font-family: fantasy, sans-serif;
+  font-size: 40px;
+}
+
+.space {
+  padding: 8px;
+}
+
+.underline {
+  border-bottom: solid;
+}
+
+.green {
+  color: lime;
+}
+
+.red {
+  color: red;
+}
