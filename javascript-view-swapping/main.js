@@ -18,10 +18,10 @@ function matches(event) {
 
   for (i = 0; i < $view.length; i++) {
     if ($view[i].getAttribute('data-view') !== data) {
-      $view[i].className = 'hidden';
+      $view[i].className = 'view hidden';
 
     } else {
-      $view[i].className = 'tab active';
+      $view[i].className = 'view';
     }
   }
 
