@@ -86,13 +86,12 @@ function renderPokemon(pokemon) {
   pokemonCardText.appendChild(p);
   p.textContent = pokemon.description;
 
-  for (var i = 0; i < pokemon.length; i++) {
-    columnThird = renderPokemon(pokemon[i]);
-
-  }
-  $row.appendChild(columnThird);
   return columnThird;
 }
 
 var $row = document.querySelector('.row');
-renderPokemon();
+
+for (var i = 0; i < pokedex.length; i++) {
+  var $pokemon = renderPokemon(pokedex[i]);
+  $row.appendChild($pokemon);
+}
