@@ -1,11 +1,17 @@
 /* exported swapChars */
 
 function swapChars(firstIndex, secondIndex, string) {
-  // var newString = '';
+  var newString = '';
 
-  // var sliceString = string.substr(-firstIndex);
-  // console.log(sliceString);
-  // var firstChar = string.charAt(firstIndex);
-  // var secondChar = string.charAt(secondIndex);
-//  console.log(firstChar, secondChar);
+  for (var i = 0; i < string.length; i++) {
+    if (i === firstIndex) {
+      newString += string[secondIndex];
+    } else if (i === secondIndex) {
+      newString += string[firstIndex];
+    } else {
+      newString += string[i];
+    }
+  }
+  return newString;
+
 }
