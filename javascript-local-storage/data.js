@@ -1,11 +1,11 @@
 /* exported todos */
-
+window.addEventListener('beforeunload', stringify);
 var todos = [];
 var previousTodosJSON = localStorage.getItem('javascript-local-storage');
 
-todos = JSON.parse(previousTodosJSON);
-
-window.addEventListener('beforeunload', stringify);
+if (previousTodosJSON !== null) {
+  todos = JSON.parse(previousTodosJSON);
+}
 
 function stringify(event) {
   var todosJSON = JSON.stringify(todos);
