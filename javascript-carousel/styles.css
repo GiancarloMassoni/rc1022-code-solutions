@@ -1,0 +1,56 @@
+.row {
+  display: flex;
+}
+
+.container {
+  width: 900px;
+  height: 900px;
+  margin: 50px;
+}
+
+.col-one-sixth {
+  flex-basis: calc(100% / 6);
+}
+
+.col-four-sixth {
+  flex-basis: calc(400% / 6);
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  height: 400px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.col-full {
+  flex-basis: 100%;
+}
+
+.space-between {
+  justify-content: space-evenly;
+}
+
+.padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
