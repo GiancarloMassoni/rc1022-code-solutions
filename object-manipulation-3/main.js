@@ -55,12 +55,10 @@ function createDeck() {
 }
 
 function shuffleDeck() {
-  var shuffledDeck = [];
-  for (var i = 0; i < 52; i++) {
-    var shuffle = Math.floor(Math.random() * deck.length);
-    shuffledDeck.push(deck[shuffle]);
-  }
-  deck = shuffledDeck;
+
+  var shuffle = _.shuffle(deck);
+
+  deck = shuffle;
 }
 
 function deal() {
