@@ -35,15 +35,19 @@ app.post('/api/notes', (req, res) => {
   } else if (postReq.content !== undefined) {
     req.body.id = id;
     notes[id] = req.body;
-    res.json(notes[id]);
     id++;
     const dataObj = JSON.stringify(data, null, 2);
     fs.writeFile('data.json', dataObj, err => {
       if (err) {
         res.sendStatus(500);
-        res.json({ error: 'An unexpected error occurred' });
+        console.error(err);
       } else {
         res.status(201);
+        const notesArr = [];
+        for (const keys in notes) {
+          notesArr.push(notes[keys]);
+        }
+        res.send(notesArr);
       }
     });
   }
@@ -58,9 +62,19 @@ app.delete('/api/notes/:id', (req, res) => {
     res.status(404).json({ error: `cannot find note with id ${id}` });
   } else {
     delete notes[id];
-    res.sendStatus(204);
+    const dataObj = JSON.stringify(data, null, 2);
+    fs.writeFile('data.json', dataObj, err => {
+      if (err) {
+        res.sendStatus(500);
+        console.error(err);
+      } else {
+        res.sendStatus(204);
+      }
+
+    });
   }
-});
+}
+);
 
 app.put('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
@@ -74,7 +88,16 @@ app.put('/api/notes/:id', (req, res) => {
   } else {
     req.body.id = id;
     notes[id] = req.body;
-    res.json(notes[id]);
+    const dataObj = JSON.stringify(data, null, 2);
+    fs.writeFile('data.json', dataObj, err => {
+      if (err) {
+        res.sendStatus(500);
+        console.error(err);
+      } else {
+        res.sendStatus(204);
+      }
+
+    });
   }
 });
 
