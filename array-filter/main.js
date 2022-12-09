@@ -23,9 +23,9 @@ console.log(startwithE);
 
 const haveDfilter = name => {
   if (name.includes('d')) {
-    return name;
+    return true;
   } else if (name.includes('D')) {
-    return name;
+    return true;
   }
 };
 
