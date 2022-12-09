@@ -27,6 +27,7 @@ const haveDfilter = name => {
   } else if (name.includes('D')) {
     return true;
   }
+  return false;
 };
 
 const haveD = names.filter(haveDfilter);
