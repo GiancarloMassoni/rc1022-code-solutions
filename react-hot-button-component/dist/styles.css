@@ -1,0 +1,29 @@
+.freezing {
+  background-color: #341c75;
+  color: white;
+}
+
+.cold {
+  background-color: #674ea7;
+  color: white;
+}
+
+.warm {
+  background-color: #e06666;
+  color: white;
+}
+
+.warmer {
+  background-color: #f6b26b;
+  color: black;
+}
+
+.hot {
+  background-color: #feff02;
+  color: black;
+}
+
+.hottest {
+  background-color: white;
+  color: black;
+}
