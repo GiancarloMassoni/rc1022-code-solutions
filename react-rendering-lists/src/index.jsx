@@ -9,7 +9,7 @@ const pokedex = [
 ];
 
 function list() {
-  const names = pokemon => <li>{pokemon.name}</li>;
+  const names = pokemon => <li key={pokemon.toString()}>{pokemon.name}</li>;
   const list = pokedex.map(names);
   return <ul>{list}</ul>;
 }
