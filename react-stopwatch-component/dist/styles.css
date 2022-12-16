@@ -1,0 +1,41 @@
+.fa-circle {
+  width: 120%;
+  background-color: white;
+  height: 100%;
+  border-color: black;
+  border-radius: 50%;
+  text-align: center;
+  padding: 20px;
+  border: 5px solid;
+  font-size: 60px;
+}
+
+.fa-circle::before {
+  color: white;
+  content: none;
+}
+
+.div {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-solid {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+  position: relative;
+  left: 40%;
+}
