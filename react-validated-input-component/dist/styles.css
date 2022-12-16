@@ -1,0 +1,25 @@
+.fa-check {
+  color: green;
+  padding-left: 10px;
+}
+
+.fa-x {
+  color: red;
+  padding-left: 10px;
+}
+
+.red {
+  color: red;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+label {
+  display: block;
+  text-align: left;
+  padding-bottom: 10px;
+}
