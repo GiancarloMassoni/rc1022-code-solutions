@@ -18,7 +18,7 @@ class StopWatch extends React.Component {
       this.setState({ clicked: false });
       clearInterval(this.state.intervalId);
 
-    } else if (this.state.clicked === false && this.state.time === 0) {
+    } else if (this.state.clicked === false) {
       this.setState({ clicked: true });
       this.setState({ intervalId: setInterval(this.handleTimer, 1000) });
     }
