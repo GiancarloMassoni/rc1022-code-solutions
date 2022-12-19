@@ -28,6 +28,7 @@ class Carousel extends React.Component {
 
   changeSlide(event, index) {
     // console.log(index);
+    // console.log(this.state);
     clearInterval(this.state.interval);
     if (index) {
       this.setState({ currSlide: index, interval: setInterval(this.handleImg, 3000) });
