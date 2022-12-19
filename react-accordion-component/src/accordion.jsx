@@ -11,8 +11,7 @@ class Accordion extends React.Component {
 
   handleDropDown(e) {
     const key = e.target.textContent;
-    this.setState({ current: this.state.drop });
-    this.setState({ drop: key });
+    this.setState({ current: this.state.drop, drop: key });
   }
 
   handleItemsClicked(item) {
