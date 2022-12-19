@@ -3,9 +3,10 @@ import React from 'react';
 class Carousel extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { image: '', currSlide: 0, interval: '' };
+    this.state = { image: '', currSlide: -1, interval: '' };
     this.handleImg = this.handleImg.bind(this);
     this.mapDots = this.mapDots.bind(this);
+    this.changeSlide = this.changeSlide.bind(this);
   }
 
   handleImg() {
@@ -18,16 +19,27 @@ class Carousel extends React.Component {
   }
 
   mapDots(img, index) {
-    if (index === 0) {
-      return <i className="fa-solid fa-circle fa-2xl padding" key={index} onClick={event => this.handleImg(event, index)}></i>;
+    if (index === this.state.currSlide) {
+      return <i className="fa-solid fa-circle fa-2xl padding" key={index} onClick={event => this.changeSlide(event, index)}></i>;
     } else {
-      return <i className="fa-regular fa-circle fa-2xl padding" key={index} onClick={event => this.handleImg(event, index)}></i>;
+      return <i className="fa-regular fa-circle fa-2xl padding" key={index} onClick={event => this.changeSlide(event, index)}></i>;
+    }
+  }
+
+  changeSlide(event, index) {
+    // console.log(index);
+    clearInterval(this.state.interval);
+    if (index) {
+      this.setState({ currSlide: index, interval: setInterval(this.handleImg, 3000) });
+      return <i className="fa-solid fa-circle fa-2xl padding" key={index} onClick={event => this.changeSlide(event, index)}></i>;
+    } else {
+      return <i className="fa-regular fa-circle fa-2xl padding" key={index} onClick={event => this.changeSlide(event, index)}></i>;
     }
   }
 
   render() {
     const image = this.props.images[this.state.currSlide];
-    // const dots = this.props.images.map(this.mapDots);
+    const dots = this.props.images.map(this.mapDots);
     // const interval = setInterval(this.props.images.map(this.mapImages), 3000);
 
     if (this.state.image === '') {
@@ -48,7 +60,7 @@ class Carousel extends React.Component {
         </div>
         <div className='row text-center'>
           <div className='col-full'>
-            {/* {dots} */}
+            {dots}
           </div>
         </div>
       </div>
