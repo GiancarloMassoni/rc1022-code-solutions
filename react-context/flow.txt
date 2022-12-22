@@ -1,0 +1,31 @@
+User can sign up.
+
+  If user clicks sign up the path changes to sign up hash.
+  It returns the Auth component.
+  Inside the auth component there are imported files from react, Redirect, AuthForm, and AppContext.
+  The authpage class renders a welcome message based on the route path
+  It then returns the welcome message and the Authform component
+  Inside the AuthForm component it tracks the state username and password
+  It also keeps track of the user input and submit events
+  In the render function of the authForm class it renders the page and keep track of the href based on sign-in and sign-up.
+  Based on those two the form will have either register or login texts. And the return function returns the form which submit
+  and change handlers
+  The username is tracked and sent to the data base while the password is hashed and tracked with a key
+
+
+User can sign in.
+
+  Once again the # changes to sign in and then it goes through the same checks as the sign up feature does except it makes sure
+  the text says sign in. If the user enters a username and password the server does a check to see if the username is currently
+  in the database and If it is in there then it gets the hashed password from that username. It then return argon2 and verifies that
+  the hashed password matches and if it true then it returns the token and user payload and it signs the current user in.
+
+User can stay signed in (even if they refresh the page).
+
+  If there is a user it calls the redirect component that has a props parameter and if the props is not empty then it goes to the to
+  property of the props object and then it replaces the window location url
+
+User can sign out.
+
+  If there is a current user in the context object then on the navbar the sign out button on click will call the handleSignout method
+  of the app class and it will remove the token from the window local storage and set the state of user to null.
