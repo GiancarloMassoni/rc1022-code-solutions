@@ -16,6 +16,23 @@ export default class App extends React.Component {
   }
 
   handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData();
+    formData.append('caption', this.state.caption);
+    formData.append('image', this.fileInputRef.current.files[0]);
+
+    fetch('/api/uploads', {
+      method: 'POST',
+      body: JSON.stringify(formData)
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        this.setState({ caption: '' });
+        this.fileInputRef.current.value = null;
+      })
+      .catch(err => console.log(err));
+
     /**
      * Prevent the browser's default behavior for form submissions.
      *
